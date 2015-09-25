@@ -1,0 +1,77 @@
+$grau: #cdcdcd;
+$hellgrau: lighten($grau, 5%);
+$dunkelgrau: darken($grau, 10%);
+
+
+body{
+	font-family: arial;	
+}
+
+
+h1{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+li{
+	padding: 2em;
+	text-align: left;
+	font-size: 2em;
+	margin:0;
+	height: 30px;
+	transition: height 0.3s, background-color 1s;
+
+	&:hover{
+			height: 60px;
+			background-color: yellow;
+	}
+
+	&.animate{
+	background-color: blue;
+	}
+}
+
+.titelbar{
+	color: black;
+	background-color: #8acc9b;
+	font-size:3em;
+	text-align: center;
+	padding: 1em;
+	margin:0;
+}
+
+
+.grau{
+	background-color: $dunkelgrau;		
+	}
+
+
+.hell{
+	background-color: $hellgrau;
+	
+}
+
+.add {
+	padding: 10px;
+	text-align: center;
+
+
+
+}
+.add a { 
+	background-color: green;
+	color: white;
+	width:100px;
+	height:100px;
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 100px;
+	text-decoration: none;
+	transition: height 0.5 s, width 0.5 s, background-color 1s;
+	&:hover{
+			height: 110px;
+			width: 110px;
+			background-color: red;
+		}
+}
