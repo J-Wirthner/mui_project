@@ -19,17 +19,35 @@ li{
 	font-size: 2em;
 	margin:0;
 	height: 30px;
-	transition: height 0.3s, background-color 1s;
+	// transition: height 0.3s, background-color 1s;
 
-	&:hover{
-			height: 60px;
-			background-color: yellow;
-	}
+	// &:hover{
+	// 	height: 60px;
+	// 	background-color: yellow;
+	// }
 
 	&.animate{
-	background-color: blue;
+		background-color: blue;
+		width: 100%;
+
+		@keyframes quetschen{
+			10%{
+				width: 95%;
+			}
+			50%{
+				width: 20%;
+			}
+			100%{
+				width: 10%;
+			}
+		}
+		animation: quetschen 4s 1;
+		width: 10%;
 	}
+
 }
+
+
 
 .titelbar{
 	color: black;
